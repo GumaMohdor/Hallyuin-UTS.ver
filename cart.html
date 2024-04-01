@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hallyuin</title>
+        <link rel="shortcut icon" href="assets/H.svg" type="image/x-icon">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="stylewl.css"> -->
+        <link rel="stylesheet" href="stylecart.css">
+    
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html">
+                <span class="hallyuin-logo">Hallyuin</span>
+            </a>
+            <form class="searchbar" action="https://www.google.com" method="get" target="_blank">
+                <input type="search" placeholder="Cari merch kiyowo..." aria-label="Searchbar" class="searchbar-input" name="q">
+                <button type="submit" class="searchbar-button">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+            </form>
+            <nav class="nav">
+                <menu class="menu">
+                    <a href="cart.html">
+                        <span class="material-symbols-outlined">shopping_cart</span>
+                    </a>
+                    <a href="#">
+                        <span class="material-symbols-outlined">history</span>
+                    </a>
+                    <a href="wishlist.html">
+                        <span class="material-symbols-outlined">favorite</span>
+                    </a>
+                </menu>
+                <a href="login.html" class="account">
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <span class="username">Annyeong, guest!</span>
+                </a>
+            </nav>
+        </header>
+<!-- 
+        <div class="cart cart-left">
+            <img src="https://kpopmerch.com/cdn/shop/products/bts-md-goods-bts-bts-gq-korea-bts-special-edition-jan-issue-32502357983413_700x.jpg?v=1646660165" alt="bts.png">
+        </div>
+        
+        <div class="cart cart-right">
+            <h2>Total Price</h2>
+            <div class="cart-total-price">Rp 134.638,69</div>
+            <button class="checkout-button">Checkout</button>
+        </div>
+        
+
+        <div class="clearfix"></div> -->
+
+        <main class="main">
+            <section id="cart" class="cart-card">
+                <h3>Shopping Cart</h3>
+                <hr>
+                <div class="cart-container">
+                    <article class="cart-merch">
+                        <div>
+                            <img src="https://kpopmerch.com/cdn/shop/products/bts-md-goods-bts-bts-gq-korea-bts-special-edition-jan-issue-32502357983413_1000x.jpg?v=1646660165" alt="merch-2" width="200px" width="200px">
+                        </div>
+                        <div>
+                            <h4>
+                                BTS - GQ Korea Magazine Cover BTS (Jan 2022)
+                            </h4>
+                            <div class="merch-quantity">
+                                <label for="merch-quantity">Quantity</label>
+                                <div>
+                                    <span class="deduct">-</span>
+                                    <input type="number" name="merch-quantity" id="merch-quantity" min="1" value="1">
+                                    <span class="add">+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            const add = document.querySelector('.add');
+                            const deduct = document.querySelector('.deduct');
+                            const quantity = document.querySelector('#merch-quantity');
+
+                            add.addEventListener('click', () => {
+                                quantity.value++;
+                            });
+                            deduct.addEventListener('click', () => {
+                                if (quantity.value > 1) quantity.value--;
+                            });
+                        </script>
+                        <div class="cart-subtotal">
+                            <h4>Subtotal</h4>
+                            <span class="price-subtotal">Rp 134.638,69</span>
+                            <span class="remove-cart">
+                                <span class="material-symbols-outlined">remove_shopping_cart</span>
+                                <span>Remove from cart</span>
+                            </span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="cart-total" class="cart-card">
+                <h3>TOTAL PRICE</h3>
+                <span class="price-total">Rp 134.638,69</span>
+                <span class="merch-checkout">
+                    <span class="material-symbols-outlined">shopping_cart_checkout</span>
+                    <span>CHECKOUT</span>
+                </span>
+            </section>
+        </main>
+        <footer>
+            <small>
+                Made with ♥ by Hallyuin
+            </small>
+        </footer>
+    </body>
+</html>
